@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"rootDir": "./",
+		"module": "commonjs",
+		"target": "es2015",
+		"noImplicitAny": false,
+		"strictNullChecks": true,
+		"sourceMap": false,
+		"outDir": "../build-benchmark",
+		"allowJs": true
+	},
+	"include": [
+		"**/*.ts"
+	]
+}

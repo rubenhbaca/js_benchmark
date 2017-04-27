@@ -1,0 +1,25 @@
+{
+  "name": "js_benchmark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && tsc -p test/ && ava build-test/ --verbose",
+    "benchmark": "tsc && tsc -p benchmark/ && ava build-benchmark/ --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/benchmark": "^1.0.30",
+    "@types/lodash": "^4.14.63",
+    "@types/underscore": "^1.8.0",
+    "ava": "^0.19.1",
+    "benchmark": "^2.1.4",
+    "lodash": "^4.17.4",
+    "timsort": "^0.3.0",
+    "tslint": "^5.1.0",
+    "typescript": "^2.2.2",
+    "underscore": "^1.8.3"
+  }
+}
