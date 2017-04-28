@@ -1,15 +1,14 @@
 {
-	"compilerOptions": {
-		"rootDir": "./",
-		"module": "commonjs",
-		"target": "es2015",
-		"noImplicitAny": false,
-		"strictNullChecks": true,
-		"sourceMap": false,
-		"outDir": "../build-benchmark",
-		"allowJs": true
-	},
-	"include": [
-		"**/*.ts"
-	]
+    "compilerOptions": {
+        "rootDir": "./",
+        "module": "commonjs",
+        "target": "es2015",
+        "noImplicitAny": false,
+        "strictNullChecks": true,
+        "sourceMap": false,
+        "outDir": "../benchmark-lib"
+    },
+    "include": [
+        "**/*.ts"
+    ]
 }

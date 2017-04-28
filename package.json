@@ -1,11 +1,18 @@
 {
   "name": "js_benchmark",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
-    "test": "tsc && tsc -p test/ && ava build-test/ --verbose",
-    "benchmark": "tsc && tsc -p benchmark/ && ava build-benchmark/ --verbose"
+    "build": "npm run quick-build && npm run webpack",
+    "quick-build": "tsc",
+    "webpack": "webpack -p",
+    "build-test": "tsc && tsc -p test/",
+    "test": "npm run build-test && ava --verbose",
+    "build-benchmark": "tsc && tsc -p benchmark/",
+    "benchmark": "npm run build-benchmark && ava --verbose benchmark-lib/",
+    "clean": "rm -rf lib test-lib"
   },
   "keywords": [],
   "author": "",
@@ -14,12 +21,25 @@
     "@types/benchmark": "^1.0.30",
     "@types/lodash": "^4.14.63",
     "@types/underscore": "^1.8.0",
-    "ava": "^0.19.1",
+    "ava": "^0.19.0",
     "benchmark": "^2.1.4",
     "lodash": "^4.17.4",
     "timsort": "^0.3.0",
-    "tslint": "^5.1.0",
+    "tslint": "^3.15.1",
     "typescript": "^2.2.2",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "webpack": "^1.13.1",
+    "webpack-fail-plugin": "^1.0.6"
+  },
+  "files": [
+    "lib/"
+  ],
+  "ava": {
+    "files": [
+      "test-lib/**/*.js"
+    ],
+    "source": [
+      "lib/**/*.js"
+    ]
   }
 }

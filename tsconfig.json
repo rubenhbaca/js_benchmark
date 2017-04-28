@@ -1,13 +1,20 @@
 {
-	"compilerOptions": {
-		"outDir": "./build/",
-		"sourceMap": true,
-		"noImplicitAny": true,
-		"module": "commonjs",
-		"target": "es5",
-		"allowJs": true
-	},
-	"include": [
-		"./src/**/*"
-	]
+    "version": "2.0.0",
+    "compilerOptions": {
+        "target": "es5",
+        "sourceMap": true,
+        "declaration": true,
+        "module": "commonjs",
+        "removeComments": false,
+        "outDir": "lib/",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "strictNullChecks": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true
+    },
+    "files": [
+        "src/index.ts"
+    ]
 }

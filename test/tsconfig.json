@@ -1,15 +1,14 @@
 {
-	"compilerOptions": {
-		"rootDir": "./",
-		"module": "commonjs",
-		"target": "es2015",
-		"noImplicitAny": false,
-		"strictNullChecks": true,
-		"sourceMap": false,
-		"outDir": "../build-test",
-		"allowJs": true
-	},
-	"include": [
-		"**/*.ts"
-	]
+    "compilerOptions": {
+        "rootDir": "./",
+        "module": "commonjs",
+        "target": "es2015",
+        "noImplicitAny": false,
+        "strictNullChecks": true,
+        "sourceMap": false,
+        "outDir": "../test-lib"
+    },
+    "include": [
+        "**/*.ts"
+    ]
 }
