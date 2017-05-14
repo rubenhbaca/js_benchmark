@@ -33,6 +33,22 @@ Sort
 √ Sort Benchmark (1m 14.2s)
 ```
 
+Loop
+```
+  For loop, basic                   x 726,492   ops/sec ±0.68% (96 runs sampled)
+  While loop, basic                 x 2,550,891 ops/sec ±1.12% (95 runs sampled)
+  While loop, cached, increment out x 2,563,286 ops/sec ±0.19% (96 runs sampled)
+  While loop, cached, increment in  x 2,138,139 ops/sec ±0.20% (98 runs sampled)
+  For loop, cached                  x 730,071   ops/sec ±0.14% (99 runs sampled)
+  For loop, i--                     x 728,685   ops/sec ±0.13% (99 runs sampled)
+  Do-while loop, i--                x 2,123,349 ops/sec ±0.98% (95 runs sampled)
+  Do-while loop, --i                x 2,132,423 ops/sec ±0.16% (98 runs sampled)
+  For..in loop                      x 22,820    ops/sec ±0.48% (97 runs sampled)
+
+  Fastest is While loop, cached, increment out
+√ loop » Loop Benchmark (49.5s)
+```
+
 
 Test
 ---

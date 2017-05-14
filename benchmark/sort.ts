@@ -22,10 +22,6 @@ let compFun = function (x, y) {
 	return x - y;
 };
 
-test.afterEach(t => {
-	console.log('');
-});
-
 test('Sort Benchmark', t => {
 	let suite = new benchmark.Suite;
 
@@ -66,7 +62,7 @@ test('Sort Benchmark', t => {
 			arraySample = createArray();
 		})
 		.on('complete', function () {
-			console.log('    Fastest is ' + this.filter('fastest').map('name'));
+			console.log('\n    Fastest is ' + this.filter('fastest').map('name'));
 		})
 		// run async
 		.run({ 'async': false });

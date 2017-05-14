@@ -11,8 +11,8 @@
     "build-test": "tsc && tsc -p test/",
     "test": "npm run build-test && ava --verbose",
     "build-benchmark": "tsc && tsc -p benchmark/",
-    "benchmark": "npm run build-benchmark && ava --verbose benchmark-lib/",
-    "clean": "rm -rf lib test-lib"
+    "benchmark": "npm run build-benchmark && ava --verbose --serial benchmark-lib/",
+    "clean": "rm -rf lib test-lib benchmark-lib"
   },
   "keywords": [],
   "author": "",
