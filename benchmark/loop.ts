@@ -78,7 +78,7 @@ test('Loop Benchmark', t => {
 			console.log('    ' + String(event.target));
 		})
 		.on('complete', function () {
-			console.log('\n    Fastest is ' + this.filter('fastest').map('name'));
+			console.log('\n    Fastest is ' + this.filter('fastest').map('name') + '\n');
 		})
 		// run async
 		.run({ 'async': false });

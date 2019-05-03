@@ -62,7 +62,7 @@ test('Sort Benchmark', t => {
 			arraySample = createArray();
 		})
 		.on('complete', function () {
-			console.log('\n    Fastest is ' + this.filter('fastest').map('name'));
+			console.log('\n    Fastest is ' + this.filter('fastest').map('name') + '\n');
 		})
 		// run async
 		.run({ 'async': false });
