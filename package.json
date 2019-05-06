@@ -23,11 +23,13 @@
     "@types/underscore": "^1.8.0",
     "ava": "^0.19.0",
     "benchmark": "^2.1.4",
+    "faker": "^4.1.0",
     "lodash": "^4.17.4",
     "timsort": "^0.3.0",
     "tslint": "^3.15.1",
     "typescript": "^2.2.2",
     "underscore": "^1.8.3",
+    "uuid": "^3.3.2",
     "webpack": "^1.13.1",
     "webpack-fail-plugin": "^1.0.6"
   },

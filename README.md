@@ -49,6 +49,14 @@ Loop
 √ loop » Loop Benchmark (49.5s)
 ```
 
+Dictionary vs Array
+```
+Dictionary Lookup x 20,750 ops/sec ±0.87% (96 runs sampled)
+Array Lookup, find x 2,872 ops/sec ±0.66% (98 runs sampled)
+
+Fastest is Dictionary Lookup
+√ array » Array vs Dictionary, Lookup Benchmark (10.9s)
+```
 
 Test
 ---
